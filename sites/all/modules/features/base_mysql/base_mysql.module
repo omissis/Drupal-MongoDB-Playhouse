@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Base Mysql feature.
+ */
+
+include_once('base_mysql.features.inc');
