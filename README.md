@@ -10,8 +10,10 @@ Sample configurations to use in sites/default/settings.php
 
 ``` php
 /**
- * MongoDB Search API Configurations
+ * MongoDB Configurations
  */
+
+/** Database Connection **/
 $conf['mongodb_connections'] = array(
   'localhost' => array('host' => 'localhost', 'db' => 'drupal'),
 );
@@ -19,10 +21,6 @@ $conf['mongodb_connections'] = array(
 $conf['mongodb_collections'] = array(
   'search' => 'logginghost',
 );
-
-/**
- * MongoDB Caching Configurations
- */
 
 /** Configure Cache **/
 $conf['cache_backends'][] = 'sites/all/modules/contrib/mongodb/mongodb_cache/mongodb_cache.inc';
